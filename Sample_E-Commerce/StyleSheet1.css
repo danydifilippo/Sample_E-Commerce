@@ -1,0 +1,16 @@
+﻿body {
+    background-color: rgb(145, 186, 204)
+}
+
+#header {
+    justify-content: start;
+}
+
+.navbar {
+    background-color: white;
+    margin-bottom:1em;
+}
+
+.container {
+    max-width: 800px;
+}
