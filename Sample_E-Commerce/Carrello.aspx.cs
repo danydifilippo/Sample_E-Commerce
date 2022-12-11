@@ -13,7 +13,7 @@ namespace Sample_E_Commerce
         {
             if(Prodotto.listaCarrello.Count== 0)
             {
-                lblEmptyCart.Text = $" <a href=\"Default.aspx\">Il tuo carrello è vuoto... Torna alla pagina prodotti</a>";
+                lblEmptyCart.Text = $" <a href=\"Default.aspx\">Il tuo carrello è vuoto... Torna alla pagina prodotti</a><hr />";
             }
             else
             {
@@ -27,12 +27,12 @@ namespace Sample_E_Commerce
 
         protected void Delete_Click(object sender, EventArgs e)
         {
+            GridCarrello.Visible= false;
+            Delete.Visible= false;
             Prodotto.listaCarrello.Clear();
             Prodotto.TotCarrello = 0 ;
             lblTotCarrello.Text = $"{Prodotto.TotCarrello.ToString("c2")}";
-            GridCarrello.Visible= false;
-            Delete.Visible= false;
-            lblEmptyCart.Text = $" <a href=\"Default.aspx\">Il tuo carrello è vuoto... Torna alla pagina prodotti</a>";
+            lblEmptyCart.Text = $" <a href=\"Default.aspx\">Il tuo carrello è vuoto... Torna alla pagina prodotti</a><hr />";
         }
     }
 }

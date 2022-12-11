@@ -24,13 +24,14 @@
                 </asp:TemplateField>
             </Columns>
         </asp:GridView>
+        
     </div>
         <div class="container">
            <div>
                <p class="float-end">Totale da pagare: <asp:Label ID="lblTotCarrello" runat="server" Text="" Font-Bold="true"></asp:Label></p>
            </div>
            <div>
-               <asp:Button ID="Delete" runat="server" Text="Svuota Carrello" OnClick="Delete_Click" CssClass="border border-0 bg-opacity-10 bg-light" Visible="true"/>
+               <asp:Button ID="Delete" runat="server" Text="Svuota Carrello" OnClick="Delete_Click" CssClass="border border-0 bg-opacity-50 bg-light" Visible="true"/>
            </div>
         </div>
 </asp:Content>

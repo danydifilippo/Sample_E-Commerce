@@ -16,7 +16,7 @@
     <form id="form1" runat="server">
         <div>
 
-            <nav class="navbar justify-content-left">
+            <nav class="navbar">
                 <div class="container justify-content-between" id="header">
                     <img src="img/logo.png" alt="Logo" width="65">
                     <h1 class="mx-4">PetLovers</h1>
@@ -29,7 +29,11 @@
           
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
-
+            <footer class="bg-light mb-0 mt-5 p-2">
+                <div class="container text-center">
+                    <p>Developed by Daniela</p>
+                </div>
+            </footer>
            
         </div>
     </form>
