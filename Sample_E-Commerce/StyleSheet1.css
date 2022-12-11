@@ -1,5 +1,7 @@
 ﻿body {
-    background-color: rgb(145, 186, 204)
+    background-color: rgb(145, 186, 204);
+    height: 100vh;
+    padding-bottom: 2em;
 }
 
 #header {
@@ -14,3 +16,20 @@
 .container {
     max-width: 800px;
 }
+
+#Carrello {
+    border-radius: 2cm;
+    background-color: rgb(145, 186, 204);
+}
+.bi-house-heart-fill {
+    color: black;
+    font-size: 23px;
+    margin-right:0.5em;
+    margin-bottom:0
+}
+footer {
+    font-size: 10px
+}
+
+
+

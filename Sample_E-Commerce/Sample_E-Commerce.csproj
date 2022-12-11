@@ -115,7 +115,6 @@
     <Compile Include="Carrello.aspx.designer.cs">
       <DependentUpon>Carrello.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Class1.cs" />
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

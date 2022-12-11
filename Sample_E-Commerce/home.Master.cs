@@ -13,5 +13,10 @@ namespace Sample_E_Commerce
         {
 
         }
+
+        protected void Carrello_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Carrello.aspx?listaCarrello");
+        }
     }
 }

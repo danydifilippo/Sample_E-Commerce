@@ -23,5 +23,23 @@ namespace Sample_E_Commerce
             }
 
         }
+
+
+
+            protected void AddProduct_Click(object sender, EventArgs e)
+        {
+            string id = Request.QueryString["Id"];
+
+
+            foreach (Prodotto a in Prodotto.GetProdotto())
+            {
+                if (id == a.Id.ToString())
+                {
+                    Prodotto.listaCarrello.Add(a);
+                    Prodotto.TotCarrello += a.Prezzo;
+                }
+            }
+
+        }
     }
 }

@@ -11,7 +11,10 @@ namespace Sample_E_Commerce
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            GridCarrello.DataSource = Prodotto.listaCarrello;
+            GridCarrello.DataBind();
+            lblTotCarrello.Text = $"{Prodotto.TotCarrello.ToString("c2")}";
+            
         }
     }
 }

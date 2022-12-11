@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Principal;
 using System.Web;
 
 namespace Sample_E_Commerce
@@ -12,6 +13,8 @@ namespace Sample_E_Commerce
         public string Descrizione { get; set; }
         public string Immagine { get; set; }
         public double Prezzo { get; set; }
+
+        public static double TotCarrello { get; set; }
 
         public static List<Prodotto> GetProdotto()
         {
@@ -36,8 +39,14 @@ namespace Sample_E_Commerce
             listaprodotti.Add(articolo7);
             listaprodotti.Add(articolo8);
             listaprodotti.Add(articolo9);
+
             return listaprodotti;
         }
+
+
+          public static List<Prodotto> listaCarrello = new List<Prodotto>();
+
+        
 
     }
 }
