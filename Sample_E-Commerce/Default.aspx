@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mb-3">
+        <div class="container pb-5">
              <div class="row row-cols-1 row-cols-md-3 g-5 justify-content-center">
                 <asp:Repeater ID="Repeater1" runat="server" ItemType="Sample_E_Commerce.Prodotto">
                 <ItemTemplate>

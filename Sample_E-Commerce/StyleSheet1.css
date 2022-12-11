@@ -1,7 +1,6 @@
 ﻿body {
     background-color: rgb(145, 186, 204);
     height: 100vh;
-    padding-bottom: 2em;
 }
 
 #header {
@@ -29,6 +28,10 @@ input {
 }
 footer {
     font-size: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
 
 a {
@@ -39,5 +42,6 @@ a {
 #Content2 {
     height: 100%;
 }
+
 
 
