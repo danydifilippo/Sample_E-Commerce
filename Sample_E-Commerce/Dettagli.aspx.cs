@@ -19,6 +19,7 @@ namespace Sample_E_Commerce
                     Image1.ImageUrl = p.Immagine;
                     Nome.Text = p.NomeProdotto;
                     Descrizione.Text = p.Descrizione;
+                    Prezzo.Text = p.Prezzo.ToString("c2");
                 }
             }
 
@@ -40,6 +41,11 @@ namespace Sample_E_Commerce
                 }
             }
 
+        }
+
+        protected void Carrello_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Carrello.aspx");
         }
     }
 }

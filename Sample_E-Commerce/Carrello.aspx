@@ -3,8 +3,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="container">
+        <asp:Label ID="lblEmptyCart" runat="server" Text=""></asp:Label>
     <asp:GridView ID="GridCarrello" CssClass="table table-bordered table-striped" runat="server"
-         AutoGenerateColumns="false" ItemType="Sample_E_Commerce.Prodotto" >
+         AutoGenerateColumns="false" ItemType="Sample_E_Commerce.Prodotto" Visible="true">
             <Columns>
                 <asp:TemplateField HeaderText="Foto" ItemStyle-CssClass="w-25">
                     <ItemTemplate>
@@ -26,7 +27,10 @@
     </div>
         <div class="container">
            <div>
-               <p class="float-end">Totale da pagare: <asp:Label ID="lblTotCarrello" runat="server" Text=""></asp:Label></p>
+               <p class="float-end">Totale da pagare: <asp:Label ID="lblTotCarrello" runat="server" Text="" Font-Bold="true"></asp:Label></p>
+           </div>
+           <div>
+               <asp:Button ID="Delete" runat="server" Text="Svuota Carrello" OnClick="Delete_Click" CssClass="border border-0 bg-opacity-10 bg-light" Visible="true"/>
            </div>
         </div>
 </asp:Content>

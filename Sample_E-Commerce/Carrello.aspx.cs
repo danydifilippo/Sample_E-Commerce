@@ -11,10 +11,28 @@ namespace Sample_E_Commerce
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridCarrello.DataSource = Prodotto.listaCarrello;
-            GridCarrello.DataBind();
+            if(Prodotto.listaCarrello.Count== 0)
+            {
+                lblEmptyCart.Text = $" <a href=\"Default.aspx\">Il tuo carrello è vuoto... Torna alla pagina prodotti</a>";
+            }
+            else
+            {
+                GridCarrello.DataSource = Prodotto.listaCarrello;
+                GridCarrello.DataBind();
+                lblTotCarrello.Text = $"{Prodotto.TotCarrello.ToString("c2")}";
+            }
+
+
+        }
+
+        protected void Delete_Click(object sender, EventArgs e)
+        {
+            Prodotto.listaCarrello.Clear();
+            Prodotto.TotCarrello = 0 ;
             lblTotCarrello.Text = $"{Prodotto.TotCarrello.ToString("c2")}";
-            
+            GridCarrello.Visible= false;
+            Delete.Visible= false;
+            lblEmptyCart.Text = $" <a href=\"Default.aspx\">Il tuo carrello è vuoto... Torna alla pagina prodotti</a>";
         }
     }
 }

@@ -42,6 +42,15 @@ namespace Sample_E_Commerce
         protected global::System.Web.UI.WebControls.Label Descrizione;
 
         /// <summary>
+        /// Controllo Prezzo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Prezzo;
+
+        /// <summary>
         /// Controllo AddProduct.
         /// </summary>
         /// <remarks>
@@ -49,5 +58,14 @@ namespace Sample_E_Commerce
         /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button AddProduct;
+
+        /// <summary>
+        /// Controllo GoCart.
+        /// </summary>
+        /// <remarks>
+        /// Campo generato automaticamente.
+        /// Per la modifica, spostare la dichiarazione di campo dal file di progettazione al file code-behind.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button GoCart;
     }
 }

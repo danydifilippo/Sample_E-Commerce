@@ -7,16 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Sample_E_Commerce
 {
-    public partial class home : System.Web.UI.MasterPage
+    public partial class WebForm1 : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void Carrello_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("Carrello.aspx");
         }
     }
 }
